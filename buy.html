@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buy Medicines</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- M icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/buy-style.css" />
+    <!-- Icons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="fnavbar">
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo">
+              <img
+                src="./images/logo.jpeg"
+                alt="Brand-logo"
+                width="180"
+                height="40"
+              />
+            </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
+
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li>
+                <a href="index.html">
+                  <span class="material-icons nav-icons">home</span>Home</a
+                >
+              </li>
+              <li>
+                <a href="#about">
+                  <span class="material-icons nav-icons">info</span>About</a
+                >
+              </li>
+              <li>
+                <a href="#contact">
+                  <span class="material-icons nav-icons">people</span>Contact</a
+                >
+              </li>
+              <li>
+                <a href="#" class="dropdown-trigger" data-target="dropdown">
+                  More
+                  <span class="material-icons nav-icons"
+                    >arrow_drop_down</span
+                  ></a
+                >
+                <!-- Dropdown Structure -->
+                <ul id="dropdown" class="dropdown-content">
+                  <li><a href="buy.html">Buy Medicine</a></li>
+                  <li><a href="#!">Hospitality</a></li>
+                  <li class="divider" tabindex="-1"></li>
+                  <li><a href="#!">Diagnosis</a></li>
+                  <li>
+                    <a href="#!">Labs</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  class="btn waves-effect btn-login"
+                  href="#"
+                  onclick="toggleModal();"
+                >
+                  <span class="material-icons nav-icons">person</span
+                  ><span>Login</span></a
+                >
+              </li>
+              <li>
+                <a href="cart.html"> <i class="fa fa-shopping-cart"></i></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <ul id="mobile-demo" class="sidenav">
+        <li>
+          <a href="#">
+            <span class="material-icons nav-icons">home</span>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#about">
+            <span class="material-icons nav-icons">info</span>
+            About Us
+          </a>
+        </li>
+        <li>
+          <a href="#contact">
+            <span class="material-icons nav-icons">people</span>
+            Contact
+          </a>
+        </li>
+        <li>
+          <a href="#" onclick="toggleModal();">
+            <span class="material-icons nav-icons">person</span>
+            Login
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="buy-section row">
+      <!-- partial:index.partial.html -->
+      <div class="row">
+        <div class="wrapper col s12 m6 l3 offset-l1">
+          <div class="container">
+            <div class="top"></div>
+            <div class="bottom">
+              <div class="left">
+                <div class="details">
+                  <b>Tetracycline</b>
+                  <p>&#8377; <b>243</b><del> &#8377; 270</del></p>
+                  <p>
+                    <span style="color: red"> 10% OFF</span> Save &#8377; 27
+                  </p>
+                </div>
+                <div class="buy">
+                  <i class="material-icons">add_shopping_cart</i>
+                </div>
+              </div>
+              <div class="right">
+                <div class="done"><i class="material-icons">done</i></div>
+                <div class="details">
+                  <b>Tetracycline</b>
+                  <p>Added to your cart</p>
+                </div>
+                <div class="remove"><i class="material-icons">clear</i></div>
+              </div>
+            </div>
+          </div>
+          <div class="inside">
+            <div class="icon"><i class="material-icons">info_outline</i></div>
+            <div class="contents">
+              <table>
+                <tr>
+                  <th>Contains</th>
+                  <th>Dencity</th>
+                </tr>
+                <tr>
+                  <td>3000mm</td>
+                  <td>4000mm</td>
+                </tr>
+                <tr>
+                  <th>Something</th>
+                  <th>Something</th>
+                </tr>
+                <tr>
+                  <td>10mg</td>
+                  <td>8mg</td>
+                </tr>
+                <tr>
+                  <th>Something</th>
+                  <th>Something</th>
+                </tr>
+                <tr>
+                  <td>200mm</td>
+                  <td>200mm</td>
+                </tr>
+                <tr>
+                  <th>Something</th>
+                  <th>Something</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper col s12 m6 l3">
+          <div class="container">
+            <div class="top"></div>
+            <div class="bottom">
+              <div class="left">
+                <div class="details">
+                  <b>Teramicine</b>
+                  <p>&#8377; <b>144</b><del> &#8377; 180</del></p>
+                  <p>
+                    <span style="color: red"> 20% OFF</span> Save &#8377; 36
+                  </p>
+                </div>
+                <div class="buy">
+                  <i class="material-icons">add_shopping_cart</i>
+                </div>
+              </div>
+              <div class="right">
+                <div class="done"><i class="material-icons">done</i></div>
+                <div class="details">
+                  <b>Teramicine</b>
+                  <p>Added to your cart</p>
+                </div>
+                <div class="remove"><i class="material-icons">clear</i></div>
+              </div>
+            </div>
+          </div>
+          <div class="inside">
+            <div class="icon"><i class="material-icons">info_outline</i></div>
+            <div class="contents">
+              <table>
+                <tr>
+                  <th>Contains</th>
+                  <th>Dencity</th>
+                </tr>
+                <tr>
+                  <td>3000mm</td>
+                  <td>4000mm</td>
+                </tr>
+                <tr>
+                  <th>Something</th>
+                  <th>Something</th>
+                </tr>
+                <tr>
+                  <td>10mg</td>
+                  <td>8mg</td>
+                </tr>
+                <tr>
+                  <th>Something</th>
+                  <th>Something</th>
+                </tr>
+                <tr>
+                  <td>200mm</td>
+                  <td>200mm</td>
+                </tr>
+                <tr>
+                  <th>Something</th>
+                  <th>Something</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper col s12 m6 l3">
+          <div class="container">
+            <div class="top"></div>
+            <div class="bottom">
+              <div class="left">
+                <div class="details">
+                  <b>Abacavir</b>
+                  <p>&#8377; <b>3850</b><del> &#8377; 5000</del></p>
+                  <p>
+                    <span style="color: red"> 23%OFF</span> Save &#8377;1150
+                  </p>
+                </div>
+                <div class="buy">
+                  <i class="material-icons">add_shopping_cart</i>
+                </div>
+              </div>
+              <div class="right">
+                <div class="done"><i class="material-icons">done</i></div>
+                <div class="details">
+                  <b>Abacavir</b>
+                  <p>Added to your cart</p>
+                </div>
+                <div class="remove"><i class="material-icons">clear</i></div>
+              </div>
+            </div>
+          </div>
+          <div class="inside">
+            <div class="icon"><i class="material-icons">info_outline</i></div>
+            <div class="contents">
+              <table>
+                <tr>
+                  <th>Contains</th>
+                  <th>Dencity</th>
+                </tr>
+                <tr>
+                  <td>3000mm</td>
+                  <td>4000mm</td>
+                </tr>
+                <tr>
+                  <th>Something</th>
+                  <th>Something</th>
+                </tr>
+                <tr>
+                  <td>10mg</td>
+                  <td>8mg</td>
+                </tr>
+                <tr>
+                  <th>Something</th>
+                  <th>Something</th>
+                </tr>
+                <tr>
+                  <td>200mm</td>
+                  <td>200mm</td>
+                </tr>
+                <tr>
+                  <th>Something</th>
+                  <th>Something</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="wrapper col s12 m6 l3 offset-l1">
+          <div class="container">
+            <div class="top"></div>
+            <div class="bottom">
+              <div class="left">
+                <div class="details">
+                  <b>Asprine</b>
+                  <p>&#8377; <b>105.6</b><del> &#8377; 120</del></p>
+                  <p>
+                    <span style="color: red"> 12% OFF</span> Save &#8377; 14.4
+                  </p>
+                </div>
+                <div class="buy">
+                  <i class="material-icons">add_shopping_cart</i>
+                </div>
+              </div>
+              <div class="right">
+                <div class="done"><i class="material-icons">done</i></div>
+                <div class="details">
+                  <b>Asprine</b>
+                  <p>Added to your cart</p>
+                </div>
+                <div class="remove"><i class="material-icons">clear</i></div>
+              </div>
+            </div>
+          </div>
+          <div class="inside">
+            <div class="icon"><i class="material-icons">info_outline</i></div>
+            <div class="contents">
+              <table>
+                <tr>
+                  <th>Contains</th>
+                  <th>Dencity</th>
+                </tr>
+                <tr>
+                  <td>3000mm</td>
+                  <td>4000mm</td>
+                </tr>
+                <tr>
+                  <th>Something</th>
+                  <th>Something</th>
+                </tr>
+                <tr>
+                  <td>10mg</td>
+                  <td>8mg</td>
+                </tr>
+                <tr>
+                  <th>Something</th>
+                  <th>Something</th>
+                </tr>
+                <tr>
+                  <td>200mm</td>
+                  <td>200mm</td>
+                </tr>
+                <tr>
+                  <th>Something</th>
+                  <th>Something</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper col s12 m6 l3">
+          <div class="container">
+            <div class="top"></div>
+            <div class="bottom">
+              <div class="left">
+                <div class="details">
+                  <b>Dexorange</b>
+                  <p>&#8377; <b>3080.48</b><del> &#8377; 3500.55</del></p>
+                  <p>
+                    <span style="color: red"> 12% OFF</span> Save &#8377;420.07
+                  </p>
+                </div>
+                <div class="buy">
+                  <i class="material-icons">add_shopping_cart</i>
+                </div>
+              </div>
+              <div class="right">
+                <div class="done"><i class="material-icons">done</i></div>
+                <div class="details">
+                  <b>Dexorange</b>
+                  <p>Added to your cart</p>
+                </div>
+                <div class="remove"><i class="material-icons">clear</i></div>
+              </div>
+            </div>
+          </div>
+          <div class="inside">
+            <div class="icon"><i class="material-icons">info_outline</i></div>
+            <div class="contents">
+              <table>
+                <tr>
+                  <th>Contains</th>
+                  <th>Dencity</th>
+                </tr>
+                <tr>
+                  <td>3000mm</td>
+                  <td>4000mm</td>
+                </tr>
+                <tr>
+                  <th>Something</th>
+                  <th>Something</th>
+                </tr>
+                <tr>
+                  <td>10mg</td>
+                  <td>8mg</td>
+                </tr>
+                <tr>
+                  <th>Something</th>
+                  <th>Something</th>
+                </tr>
+                <tr>
+                  <td>200mm</td>
+                  <td>200mm</td>
+                </tr>
+                <tr>
+                  <th>Something</th>
+                  <th>Something</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper col s12 m6 l3">
+          <div class="container">
+            <div class="top"></div>
+            <div class="bottom">
+              <div class="left">
+                <div class="details">
+                  <b>D cold total</b>
+                  <p>&#8377; <b>55.1</b><del> &#8377; 58</del></p>
+                  <p>
+                    <span style="color: red"> 5% OFF</span> Save &#8377; 2.9
+                  </p>
+                </div>
+                <div class="buy">
+                  <i class="material-icons">add_shopping_cart</i>
+                </div>
+              </div>
+              <div class="right">
+                <div class="done"><i class="material-icons">done</i></div>
+                <div class="details">
+                  <b>D cold total</b>
+                  <p>Added to your cart</p>
+                </div>
+                <div class="remove"><i class="material-icons">clear</i></div>
+              </div>
+            </div>
+          </div>
+          <div class="inside">
+            <div class="icon"><i class="material-icons">info_outline</i></div>
+            <div class="contents">
+              <table>
+                <tr>
+                  <th>Contains</th>
+                  <th>Dencity</th>
+                </tr>
+                <tr>
+                  <td>3000mm</td>
+                  <td>4000mm</td>
+                </tr>
+                <tr>
+                  <th>Something</th>
+                  <th>Something</th>
+                </tr>
+                <tr>
+                  <td>10mg</td>
+                  <td>8mg</td>
+                </tr>
+                <tr>
+                  <th>Something</th>
+                  <th>Something</th>
+                </tr>
+                <tr>
+                  <td>200mm</td>
+                  <td>200mm</td>
+                </tr>
+                <tr>
+                  <th>Something</th>
+                  <th>Something</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- partial -->
+    </section>
+
+    <section class="ffooter" id="contact">
+      <footer class="footer-one">
+        <div class="row container">
+          <div class="col l6 s12">
+            <h3 class="white-text">Contact Us</h3>
+            <p class="grey-text lighten-4">
+              <span><i class="material-icons tiny nav-icons">business</i></span>
+              Surya nagar road no-3 Bijulia talab road ward no -8 Ramgarh
+              canttRamgarh Jharkhand 829122
+            </p>
+            <p class="grey-text lighten-4 left">
+              <span
+                ><i class="material-icons tiny nav-icons">local_phone</i></span
+              >
+              +91 93049 70109
+            </p>
+          </div>
+          <div class="col l6 s12">
+            <h3 class="white-text">Social Media</h3>
+            <ul>
+              <li>
+                <a href="#" class="fa fa-facebook"></a
+                ><a href="#" class="grey-text lighten-4"> Facebook</a>
+              </li>
+              <li>
+                <a href="#" class="fa fa-instagram"></a
+                ><a href="#" class="grey-text lighten-4"> Instagram</a>
+              </li>
+              <li>
+                <a href="#" class="fa fa-google"></a
+                ><a href="#" class="grey-text lighten-4"> Google</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row footer-two">
+          <div class="col l6 s6">
+            <p class="white-text">&copy; Visudhajivam</p>
+          </div>
+          <div class="col l6 s6">
+            <p class="white-text right">
+              Made with
+              <span
+                ><i
+                  class="material-icons tiny"
+                  style="position: relative; bottom: -3px"
+                  >favorite</i
+                ></span
+              >
+              by Akarsh Bhadani
+            </p>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+      $(".buy").click(function () {
+        $(".bottom").addClass("clicked");
+      });
+
+      $(".remove").click(function () {
+        $(".bottom").removeClass("clicked");
+      });
+    </script>
+
+    <!-- J-query -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./js/loader.js"></script>
+  </body>
+</html>

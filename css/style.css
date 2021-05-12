@@ -1,0 +1,139 @@
+:root {
+  --main-color: #46bbfd;
+  --secondary-color: #801d0b;
+  --buy-button-color: #ff411f;
+}
+* {
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-wrapper {
+  background-color: var(--main-color);
+}
+
+.brand-logo {
+  margin: 10px 20px;
+}
+.footer-one {
+  background: #264659;
+}
+
+.footer-two {
+  background: #264659;
+}
+
+.slider .indicators .indicator-item.active {
+  background-color: var(--secondary-color);
+}
+
+.parallax-container {
+  min-height: 350px;
+  height: auto;
+}
+
+.nav-icons {
+  position: relative;
+  bottom: -3px;
+  font-size: 18px;
+  color: black;
+}
+
+#nav-mobile > li > a {
+  color: black;
+}
+
+.dropdown-content > li > a {
+  color: black;
+}
+
+.btn-login {
+  border: 2px solid var(--secondary-color);
+  background: var(--main-color);
+  /* box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25); */
+  border-radius: 25px;
+}
+.btn-login > span {
+  margin-top: -50px;
+}
+.btn-login:hover {
+  background: var(--main-color);
+}
+.sub-heading {
+  letter-spacing: 0.2em;
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+.heading {
+  margin: 0px auto;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+}
+.description {
+  text-align: justify;
+}
+.read {
+  background: rgba(255, 20, 20, 0.53);
+  border-radius: 6px;
+}
+.read:hover {
+  background: rgba(255, 20, 20, 0.7);
+}
+
+.comp-heading,
+.sub-comp-heading {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+}
+
+.buy-btn {
+  background-color: var(--buy-button-color);
+}
+.buy-btn:hover,
+.buy:active {
+  background-color: #af2107;
+}
+
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+.scrolled.slide-left {
+  animation: slide-in-left 1s ease-in-out both;
+}
+
+.scrolled.slide-right {
+  animation: slide-in-right 1s ease-in-out both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

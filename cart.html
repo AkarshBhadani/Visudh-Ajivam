@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- M icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Icons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Cart</title>
+    <style type="text/css">
+      body {
+        font-family: Arial;
+        font-size: 17px;
+        padding: 8px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .row2 {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        margin: 0 -16px;
+        padding: 10px;
+      }
+      .col-25 {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+      }
+
+      .col-50 {
+        -ms-flex: 50%; /* IE10 */
+        flex: 50%;
+      }
+
+      .col-75 {
+        -ms-flex: 75%; /* IE10 */
+        flex: 75%;
+      }
+
+      .col-25,
+      .col-50,
+      .col-75 {
+        padding: 0 16px;
+      }
+      .container2 {
+        background-color: #f2f2f2;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+      }
+      input[type="text"] {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      label {
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      .icon-container {
+        margin-bottom: 20px;
+        padding: 7px 0;
+        font-size: 24px;
+      }
+      a {
+        color: #2196f3;
+      }
+
+      hr {
+        border: 1px solid lightgrey;
+      }
+
+      span.price {
+        float: right;
+        color: grey;
+      }
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+      @media (max-width: 800px) {
+        .row {
+          flex-direction: column-reverse;
+        }
+        .col-25 {
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="fnavbar">
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo">
+              <img
+                src="./images/logo.jpeg"
+                alt="Brand-logo"
+                width="180"
+                height="40"
+              />
+            </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
+
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li>
+                <a href="index.html">
+                  <span class="material-icons nav-icons">home</span>Home</a
+                >
+              </li>
+              <li>
+                <a href="#about">
+                  <span class="material-icons nav-icons">info</span>About</a
+                >
+              </li>
+              <li>
+                <a href="#contact">
+                  <span class="material-icons nav-icons">people</span>Contact</a
+                >
+              </li>
+              <li>
+                <a href="#" class="dropdown-trigger" data-target="dropdown">
+                  More
+                  <span class="material-icons nav-icons"
+                    >arrow_drop_down</span
+                  ></a
+                >
+                <!-- Dropdown Structure -->
+                <ul id="dropdown" class="dropdown-content">
+                  <li><a href="buy.html">Buy Medicine</a></li>
+                  <li><a href="#!">Hospitality</a></li>
+                  <li class="divider" tabindex="-1"></li>
+                  <li><a href="#!">Diagnosis</a></li>
+                  <li>
+                    <a href="#!">Labs</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  class="btn waves-effect btn-login"
+                  href="#"
+                  onclick="toggleModal();"
+                >
+                  <span class="material-icons nav-icons">person</span
+                  ><span>Login</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <ul id="mobile-demo" class="sidenav">
+        <li>
+          <a href="#">
+            <span class="material-icons nav-icons">home</span>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#about">
+            <span class="material-icons nav-icons">info</span>
+            About Us
+          </a>
+        </li>
+        <li>
+          <a href="#contact">
+            <span class="material-icons nav-icons">people</span>
+            Contact
+          </a>
+        </li>
+        <li>
+          <a href="#" onclick="toggleModal();">
+            <span class="material-icons nav-icons">person</span>
+            Login
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="row row2">
+      <div class="col-75">
+        <div class="container container2">
+          <form action="/action_page.php">
+            <div class="row row2">
+              <div class="col-50">
+                <h3>Billing Address</h3>
+                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  placeholder="First Name"
+                />
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="email@example.com"
+                />
+                <label for="adr"
+                  ><i class="fa fa-address-card-o"></i> Address</label
+                >
+                <input
+                  type="text"
+                  id="adr"
+                  name="address"
+                  placeholder="House No. Street"
+                />
+                <label for="city"><i class="fa fa-institution"></i> City</label>
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  placeholder="Ramgarh"
+                />
+
+                <div class="row">
+                  <div class="col-50">
+                    <label for="state">State</label>
+                    <input
+                      type="text"
+                      id="state"
+                      name="state"
+                      placeholder="Jharkhand"
+                    />
+                  </div>
+                  <div class="col-50">
+                    <label for="zip">Zip</label>
+                    <input
+                      type="text"
+                      id="zip"
+                      name="zip"
+                      placeholder="829112"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-50">
+                <h3>Payment</h3>
+                <label for="fname">Accepted Cards</label>
+                <div class="icon-container">
+                  <i class="fa fa-cc-visa" style="color: navy"></i>
+                  <i class="fa fa-cc-amex" style="color: blue"></i>
+                  <i class="fa fa-cc-mastercard" style="color: red"></i>
+                  <i class="fa fa-cc-discover" style="color: orange"></i>
+                </div>
+                <label for="cname">Name on Card</label>
+                <input
+                  type="text"
+                  id="cname"
+                  name="cardname"
+                  placeholder="Name"
+                />
+                <label for="ccnum">Credit card number</label>
+                <input
+                  type="text"
+                  id="ccnum"
+                  name="cardnumber"
+                  placeholder="1111-2222-3333-4444"
+                />
+                <label for="expmonth">Exp Month</label>
+                <input
+                  type="text"
+                  id="expmonth"
+                  name="expmonth"
+                  placeholder="September"
+                />
+                <div class="row">
+                  <div class="col-50">
+                    <label for="expyear">Exp Year</label>
+                    <input
+                      type="text"
+                      id="expyear"
+                      name="expyear"
+                      placeholder="2024"
+                    />
+                  </div>
+                  <div class="col-50">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="352" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <label>
+              <input type="checkbox" checked="checked" name="sameadr" />
+              Shipping address same as billing
+            </label>
+            <input type="submit" value="Continue to checkout" class="btn" />
+          </form>
+        </div>
+      </div>
+      <div class="col-25">
+        <div class="container container2">
+          <h4>
+            Cart
+            <span class="price" style="color: black"
+              ><i class="fa fa-shopping-cart"></i> <b>4</b></span
+            >
+          </h4>
+          <p><a href="#">Product 1</a> <span class="price">&#8377;200</span></p>
+          <p><a href="#">Product 2</a> <span class="price">&#8377; 50</span></p>
+          <p>
+            <a href="#">Product 3</a> <span class="price">&#8377; 1000</span>
+          </p>
+          <p><a href="#">Product 4</a> <span class="price">&#8377; 45</span></p>
+          <hr />
+          <p>
+            Total
+            <span class="price" style="color: black"><b>&#8377; 1295</b></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="ffooter" id="contact">
+      <footer class="footer-one">
+        <div class="row container">
+          <div class="col l6 s12">
+            <h3 class="white-text">Contact Us</h3>
+            <p class="grey-text lighten-4">
+              <span><i class="material-icons tiny nav-icons">business</i></span>
+              Surya nagar road no-3 Bijulia talab road ward no -8 Ramgarh
+              canttRamgarh Jharkhand 829122
+            </p>
+            <p class="grey-text lighten-4 left">
+              <span
+                ><i class="material-icons tiny nav-icons">local_phone</i></span
+              >
+              +91 93049 70109
+            </p>
+          </div>
+          <div class="col l6 s12">
+            <h3 class="white-text">Social Media</h3>
+            <ul>
+              <li>
+                <a href="#" class="fa fa-facebook"></a
+                ><a href="#" class="grey-text lighten-4"> Facebook</a>
+              </li>
+              <li>
+                <a href="#" class="fa fa-instagram"></a
+                ><a href="#" class="grey-text lighten-4"> Instagram</a>
+              </li>
+              <li>
+                <a href="#" class="fa fa-google"></a
+                ><a href="#" class="grey-text lighten-4"> Google</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row footer-two">
+          <div class="col l6 s6">
+            <p class="white-text">&copy; Visudhajivam</p>
+          </div>
+          <div class="col l6 s6">
+            <p class="white-text right">
+              Made with
+              <span
+                ><i
+                  class="material-icons tiny"
+                  style="position: relative; bottom: -3px"
+                  >favorite</i
+                ></span
+              >
+              by Akarsh Bhadani
+            </p>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- J-query -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./js/loader.js"></script>
+  </body>
+</html>

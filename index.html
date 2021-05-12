@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- M icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="fnavbar">
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo">
+              <img
+                src="./images/logo.jpeg"
+                alt="Brand-logo"
+                width="180"
+                height="40"
+              />
+            </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
+
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li>
+                <a href="#">
+                  <span class="material-icons nav-icons">home</span>Home</a
+                >
+              </li>
+              <li>
+                <a href="#about">
+                  <span class="material-icons nav-icons">info</span>About</a
+                >
+              </li>
+              <li>
+                <a href="#contact">
+                  <span class="material-icons nav-icons">people</span>Contact</a
+                >
+              </li>
+              <li>
+                <a href="#" class="dropdown-trigger" data-target="dropdown">
+                  More
+                  <span class="material-icons nav-icons"
+                    >arrow_drop_down</span
+                  ></a
+                >
+                <!-- Dropdown Structure -->
+                <ul id="dropdown" class="dropdown-content">
+                  <li><a href="buy.html">Buy Medicine</a></li>
+                  <li><a href="#!">Hospitality</a></li>
+                  <li class="divider" tabindex="-1"></li>
+                  <li><a href="#!">Diagnosis</a></li>
+                  <li>
+                    <a href="#!">Labs</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  class="btn waves-effect btn-login"
+                  href="#"
+                  onclick="toggleModal();"
+                >
+                  <span class="material-icons nav-icons">person</span
+                  ><span>Login</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <ul id="mobile-demo" class="sidenav">
+        <li>
+          <a href="#">
+            <span class="material-icons nav-icons">home</span>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#about">
+            <span class="material-icons nav-icons">info</span>
+            About Us
+          </a>
+        </li>
+        <li>
+          <a href="#contact">
+            <span class="material-icons nav-icons">people</span>
+            Contact
+          </a>
+        </li>
+        <li>
+          <a href="#" onclick="toggleModal();">
+            <span class="material-icons nav-icons">person</span>
+            Login
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="header row">
+      <div class="section white col s12 l5 offset-l1">
+        <p class="sub-heading">Proudly Providing</p>
+        <h2 class="heading">
+          High Quality<br />
+          Health <br />Services
+        </h2>
+        <p class="description">
+          <b>VISUDH AJIVAM PVT LTD</b> is one of the best digital platform for
+          health care services integrated with pharmacies, doctors, labtests,
+          diagnosis centres across India to provide world class Healthcare
+          facilities to individuals across the country.This platform is the
+          fastest, cheapest, safestway for you and your loved ones for meeting
+          your medical needs in terms of medicine, labtest and doctors
+          availability at the right time at the best affordable price.We make
+          sure that the quality of service you are getting is world class we
+          give you this gurranty with every service you opt for online as well
+          as offline.We are one stop solution for your problems.We are covering
+          a wide range of products, test and doctors with speciality in
+          different feilds to make the service wide and safest.
+        </p>
+        <button class="btn waves-effect right read">Read More</button>
+      </div>
+      <div class="header-img col s12 l5">
+        <img
+          src="./images/header.jpg"
+          alt="Header image"
+          style="max-width: 100vw"
+        />
+      </div>
+    </section>
+
+    <section class="fslider">
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="./images/slide.webp" alt="image one" />
+          </li>
+          <li>
+            <img src="./images/slide2.jpg" alt="image two" />
+          </li>
+          <li>
+            <img src="./images/slide3.webp" alt="image three" />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="aboutus row" id="about">
+      <div class="section white center col s12 l5 offset-l1 aboutImg">
+        <img
+          src="./images/main1.jpg"
+          alt="About us image"
+          height="350"
+          width="350"
+        />
+      </div>
+      <div class="col s12 l5">
+        <h2 class="comp-heading">
+          About Us <span><img src="./images/arrow.svg" alt="" /></span>
+        </h2>
+        <h5 class="sub-comp-heading">Be gentle with the Strongest</h5>
+        <p class="description">
+          <b>VISUDH AJIVAM PVT LTD</b> is one of the best digital platform for
+          health care services integrated with pharmacies, doctors, labtests,
+          diagnosis centres across India to provide world class Healthcare
+          facilities to individuals across the country.This platform is the
+          fastest, cheapest, safestway for you and your loved ones for meeting
+          your medical needs in terms of medicine, labtest and doctors
+          availability at the right time at the best affordable price.We make
+          sure that the quality of service you are getting is world class we
+          give you this gurranty with every service you opt for online as well
+          as offline.We are one stop solution for your problems.We are covering
+          a wide range of products, test and doctors with speciality in
+          different feilds to make the service wide and safest.
+        </p>
+      </div>
+    </section>
+
+    <section class="services row">
+      <div class="col s11 offset-s1">
+        <h2 class="comp-heading">
+          What we DO <span><img src="./images/arrow.svg" alt="" /></span>
+        </h2>
+      </div>
+      <section class="fcards" id="services">
+        <div class="row" style="padding: auto 50px">
+          <div class="col l3 m6 s12 offset-l1" style="padding: 0 10px">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img
+                  src="./images/s1.png"
+                  alt="service image"
+                  class="activator"
+                  width="350"
+                  height="230"
+                />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator text-darken-4"
+                  >Book Appointment
+                  <i class="material-icons right">more_vert</i></span
+                >
+                <p class="grey-text">Set up an appointment, Call or Mail us.</p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title text-darken-4"
+                  >Book Appointment
+                  <i class="material-icons right">close</i></span
+                >
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Perspiciatis, repellat.
+                </p>
+                <button class="btn buy-btn waves-effect btn-block">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 m6 s12" style="padding: 0 10px">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img
+                  src="./images/s2.png"
+                  alt="service image"
+                  class="activator"
+                  width="350"
+                  height="230"
+                />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator text-darken-4"
+                  >Book Appointment
+                  <i class="material-icons right">more_vert</i></span
+                >
+                <p class="grey-text">Set up an appointment, Call or Mail us.</p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title text-darken-4"
+                  >Book Appointment
+                  <i class="material-icons right">close</i></span
+                >
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Perspiciatis, repellat.
+                </p>
+                <button class="btn buy-btn waves-effect btn-block">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 m6 s12" style="padding: 0 10px">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img
+                  src="./images/s3.png"
+                  alt="service image"
+                  class="activator"
+                  width="350"
+                  height="230"
+                />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator text-darken-4"
+                  >Book Appointment
+                  <i class="material-icons right">more_vert</i></span
+                >
+                <p class="grey-text">Set up an appointment, Call or Mail us.</p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title text-darken-4"
+                  >Book Appointment
+                  <i class="material-icons right">close</i></span
+                >
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Perspiciatis, repellat.
+                </p>
+                <button class="btn buy-btn waves-effect btn-block">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col l3 offset-l1 m6 s12" style="padding: 0 10px">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img
+                  src="./images/s4.png"
+                  alt="service image"
+                  class="activator"
+                  width="350"
+                  height="230"
+                />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator text-darken-4"
+                  >Book Appointment
+                  <i class="material-icons right">more_vert</i></span
+                >
+                <p class="grey-text">Set up an appointment, Call or Mail us.</p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title text-darken-4"
+                  >Book Appointment
+                  <i class="material-icons right">close</i></span
+                >
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Perspiciatis, repellat.
+                </p>
+                <button class="btn buy-btn waves-effect btn-block">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 m6 s12" style="padding: 0 10px">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img
+                  src="./images/s5.png"
+                  alt="service image"
+                  class="activator"
+                  width="350"
+                  height="230"
+                />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator text-darken-4"
+                  >Book Appointment
+                  <i class="material-icons right">more_vert</i></span
+                >
+                <p class="grey-text">Set up an appointment, Call or Mail us.</p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title text-darken-4"
+                  >Book Appointment
+                  <i class="material-icons right">close</i></span
+                >
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Perspiciatis, repellat.
+                </p>
+                <button class="btn buy-btn waves-effect btn-block">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 m6 s12" style="padding: 0 10px">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img
+                  src="./images/s6.png"
+                  alt="service image"
+                  class="activator"
+                  width="350"
+                  height="230"
+                />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator text-darken-4"
+                  >Book Appointment
+                  <i class="material-icons right">more_vert</i></span
+                >
+                <p class="grey-text">Set up an appointment, Call or Mail us.</p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title text-darken-4"
+                  >Book Appointment
+                  <i class="material-icons right">close</i></span
+                >
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Perspiciatis, repellat.
+                </p>
+                <button class="btn buy-btn waves-effect btn-block">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="vision row">
+      <div class="col s11 offset-s1">
+        <h2 class="comp-heading">
+          Our Vision <span><img src="./images/arrow.svg" alt="" /></span>
+        </h2>
+      </div>
+      <div class="row col l12 js-scroll slide-left" id="anim">
+        <div class="col l4 center">
+          <img src="./images/v1.png" alt="Vision 1" height="150" width="140" />
+        </div>
+        <div class="col l8">
+          <p>
+            To revolutionise the Healthcare sector through this healthtech
+            platform so that each and every citizen of India can get the best
+            medical needs at there allowing budget.So that no one looses their
+            lives just because of few bugs.We are making a family to save our
+            public from the scarcity of services which is forced by their budget
+            parameters.We are fastest, safest and cheapest one stop solution for
+            your medical facilities.We value your lives,ur needs and ur money.We
+            want to be your health guide as well as health care service
+            provider.
+          </p>
+        </div>
+      </div>
+      <div class="row col l12 js-scroll slide-right">
+        <div class="col l4 center">
+          <img src="./images/v2.png" alt="Vision 2" height="150" width="140" />
+        </div>
+        <div class="col l8">
+          <p>
+            To revolutionise the Healthcare sector through this healthtech
+            platform so that each and every citizen of India can get the best
+            medical needs at there allowing budget.So that no one looses their
+            lives just because of few bugs.We are making a family to save our
+            public from the scarcity of services which is forced by their budget
+            parameters.We are fastest, safest and cheapest one stop solution for
+            your medical facilities.We value your lives,ur needs and ur money.We
+            want to be your health guide as well as health care service
+            provider.
+          </p>
+        </div>
+      </div>
+      <div class="row col l12 js-scroll slide-left">
+        <div class="col l4 center">
+          <img src="./images/v3.png" alt="Vision 3" height="150" width="140" />
+        </div>
+        <div class="col l8">
+          <p>
+            To revolutionise the Healthcare sector through this healthtech
+            platform so that each and every citizen of India can get the best
+            medical needs at there allowing budget.So that no one looses their
+            lives just because of few bugs.We are making a family to save our
+            public from the scarcity of services which is forced by their budget
+            parameters.We are fastest, safest and cheapest one stop solution for
+            your medical facilities.We value your lives,ur needs and ur money.We
+            want to be your health guide as well as health care service
+            provider.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="freviews">
+      <div class="section white row">
+        <div class="col s11 offset-s1">
+          <h2 class="comp-heading">
+            Testimonials <span><img src="./images/arrow.svg" alt="" /></span>
+          </h2>
+        </div>
+        <div class="myreviews carousel">
+          <!-- <a href="#" class="carousel-item"> -->
+          <div class="row">
+            <div class="col s12 m6 l3 carousel-item">
+              <div class="card" style="background-color: #6394ae">
+                <div class="card-content">
+                  <span class="card-title">Helen Brooke Taussig</span>
+                  <p>
+                    General Practitioner is a medical doctor who treats all
+                    common medical conditions and refers patients to hospitals
+                    and other medical services for urgent and specialist
+                    treatment.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m6 l3 carousel-item">
+              <div class="card" style="background-color: #6394ae">
+                <div class="card-content">
+                  <span class="card-title">Dr. Julio J. Hajdenberg</span>
+                  <p>
+                    A neurologist is a medical doctor with specialized training
+                    in diagnosing, treating, and managing disorders of the brain
+                    and nervous system including, but not limited to,
+                    Alzheimer's disease, amyotrophic lateral sclerosis (ALS),
+                    concussion, epilepsy, migr.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m6 l3 carousel-item">
+              <div class="card" style="background-color: #6394ae">
+                <div class="card-content">
+                  <span class="card-title">Dr. Jennifer E. Tseng</span>
+                  <p>
+                    We have a large variety of medicinal products. Easily
+                    available at your door step.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- </a> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="locate row">
+      <div class="col s11 offset-s1">
+        <h2 class="comp-heading">
+          Locate Us<span><img src="./images/arrow.svg" alt="" /></span>
+        </h2>
+        <a
+          href="https://www.google.com/maps/place/Momo+Junction/@23.6215787,85.5121861,17z/data=!3m1!4b1!4m5!3m4!1s0x39f4f3eb1a054769:0x79588271a4618e80!8m2!3d23.6215738!4d85.5143748"
+        >
+          <img src="./images/locate.png" alt="" style="max-width: 90vw" />
+        </a>
+      </div>
+    </section>
+
+    <section class="ffooter" id="contact">
+      <footer class="footer-one">
+        <div class="row container">
+          <div class="col l6 s12">
+            <h3 class="white-text">Contact Us</h3>
+            <p class="grey-text lighten-4">
+              <span><i class="material-icons tiny nav-icons">business</i></span>
+              Surya nagar road no-3 Bijulia talab road ward no -8 Ramgarh
+              canttRamgarh Jharkhand 829122
+            </p>
+            <p class="grey-text lighten-4 left">
+              <span
+                ><i class="material-icons tiny nav-icons">local_phone</i></span
+              >
+              +91 93049 70109
+            </p>
+          </div>
+          <div class="col l6 s12">
+            <h3 class="white-text">Social Media</h3>
+            <ul>
+              <li><a href="#" class="fa fa-facebook"></a><a href="#" class="grey-text lighten-4"> Facebook</a></li>
+              <li><a href="#" class="fa fa-instagram"></a><a href="#" class="grey-text lighten-4"> Instagram</a></li>
+              <li><a href="#" class="fa fa-google"></a><a href="#" class="grey-text lighten-4"> Google</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row footer-two">
+          <div class="col l6 s6">
+            <p class="white-text">&copy; Visudhajivam</p>
+          </div>
+          <div class="col l6 s6">
+            <p class="white-text right">
+              Made with
+              <span
+                ><i
+                  class="material-icons tiny"
+                  style="position: relative; bottom: -3px"
+                  >favorite</i
+                ></span
+              >
+              by Akarsh Bhadani
+            </p>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <section id="infoModal">
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <h4 class="info-modal-heading">Link is disabled</h4>
+          <p class="info-modal-content">
+            Sorry!! all the links are disabled as of now
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="modal-close waves-effect btn orange">Close</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- J-query -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./js/loader.js"></script>
+  </body>
+</html>
